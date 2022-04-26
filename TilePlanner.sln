@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilePlannerUI", "TilePlannerUI\TilePlannerUI.csproj", "{5C202411-705F-43A8-9F82-09AA16292912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPDataLibrary", "TPDataLibrary\TPDataLibrary.csproj", "{645FB33F-DB04-460F-AB15-533A68EE24CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5C202411-705F-43A8-9F82-09AA16292912}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C202411-705F-43A8-9F82-09AA16292912}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C202411-705F-43A8-9F82-09AA16292912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645FB33F-DB04-460F-AB15-533A68EE24CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645FB33F-DB04-460F-AB15-533A68EE24CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645FB33F-DB04-460F-AB15-533A68EE24CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645FB33F-DB04-460F-AB15-533A68EE24CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
