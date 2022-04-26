@@ -1,0 +1,60 @@
+﻿<Window x:Class="TilePlannerUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TilePlannerUI"
+        mc:Ignorable="d"
+        Title="Tile Planner" Height="600" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="300"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="1" Margin="15" BorderBrush="#d6d6d6" BorderThickness="1" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Margin="5" Content="Height of tile (mm)"/>
+                <TextBox x:Name="TileHeightBox" Grid.Row="0" Grid.Column="1" Margin="10" MinHeight="20"
+                         VerticalAlignment="Center"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Margin="5" Content="Width of tile (mm)"/>
+                <TextBox x:Name="TileWidthBox" Grid.Row="1" Grid.Column="1" Margin="10" MinHeight="20"
+                         VerticalAlignment="Center"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Margin="5" Content="Width of wall (mm)"/>
+                <TextBox x:Name="WallWidthBox" Grid.Row="2" Grid.Column="1" Margin="10" MinHeight="20"
+                     VerticalContentAlignment="Center"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Margin="5" Content="Height of wall (mm)"/>
+                <TextBox x:Name="WallHeightBox" Grid.Row="3" Grid.Column="1" Margin="10" MinHeight="20"
+                     VerticalContentAlignment="Center"/>
+
+                <Button Grid.Row="4" Grid.ColumnSpan="2" Height="25" Width="100" Margin="10" Content="Calculate" Click="Button_Calculate"/>
+
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="2" Margin="15" BorderBrush="#d6d6d6" BorderThickness="1" Grid.ColumnSpan="2">
+            <TextBlock x:Name="OutputBox" TextAlignment="Center"
+                   VerticalAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>
